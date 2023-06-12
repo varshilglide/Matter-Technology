@@ -1,0 +1,4 @@
+1. Reference Link:
+--> https://www.circuitbasics.com/how-to-set-up-the-dht11-humidity-sensor-on-an-arduino/
+
+2. 
