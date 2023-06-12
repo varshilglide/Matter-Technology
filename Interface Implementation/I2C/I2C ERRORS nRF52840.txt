@@ -1,0 +1,26 @@
+1. Error: __vfprintf.h: No such file or directory
+--> https://devzone.nordicsemi.com/f/nordic-q-a/85919/__vfprintf-h-no-such-file-or-directory
+--> Just Exclude SEGGER_RTT_Syscalls_SES file.
+
+
+2. Error: undefined reference to `nrfx_twim_enable'
+--> https://infocenter.nordicsemi.com/index.jsp?topic=%2Fug_gsg_ses%2FUG%2Fgsg%2Fadd_headers_ses.html&cp=1_0_1_6_5_1
+--> --> Go to Project Options --> select common --> Go to preprocessor --> Include directories --> Copy and Paste the path of (D:\Glide\Matter Technology\nRF5_SDK_17.0.2_d674dde\components\libraries\log\src)
+
+3. undefined reference to `nrfx_twim_init'
+--> Please make sure to comment out or remove the legacy TWI_ENABLED define
+--> Comment below code
+    #ifndef NRFX_TWIM_ENABLED
+    #define NRFX_TWIM_ENABLED 1
+    #endif
+
+4.  Error: undefined reference to `nrf_log_backend_uart_api'
+
+--> Go to Project Options --> select common --> Go to preprocessor --> Include directories --> Copy and Paste the path of (D:\Glide\Matter Technology\nRF5_SDK_17.0.2_d674dde\components\libraries\log\src)
+
+
+
+5. Error: undefined reference to `twi_init'
+
+--> 
+

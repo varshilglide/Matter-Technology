@@ -1,0 +1,37 @@
+Q: What is I2C?
+
+--> I2C (Inter-Integrated Circuit) is a serial communication interface.
+
+--> It is widely used in electronic devices such as sensors, EEPROMs, and other peripherals.
+
+--> The I2C interface requires only two lines, a clock line (SCL) and a data line (SDA), which allows for simple and efficient communication between devices. The devices on the bus are addressed by a unique 7-bit address, which allows for up to 128 devices to be connected to the same bus.
+
+--> The I2C protocol supports multiple data transfer modes, including master-slave and multi-master communication. 
+    In a master-slave configuration, one device acts as the master and initiates communication, while the other devices act as slaves and respond to commands. 
+    In multi-master mode, multiple devices can act as masters and communicate with each other.
+
+Q: What is the concept of Master and Slave in I2C?
+
+--> In I2C communication, the devices are classified into two categories: master and slave. The master device initiates and controls communication, while the slave devices respond to the master's commands.
+
+--> The master device generates the clock signal (SCL) and initiates the communication by sending the slave device's address along with the read or write command. The slave devices on the bus have unique 7-bit addresses that allow the master device to select a particular slave device for communication.
+
+--> After the master device sends the slave device's address, it waits for an acknowledgment (ACK) from the slave device. If the slave device acknowledges the address, the master can continue with the communication. If there is no acknowledgment, the master can assume that the device is not present on the bus.
+
+--> Once communication has been established, the master device controls the data transfer between the devices. In a write operation, the master sends data to the slave, and in a read operation, the master receives data from the slave.
+
+--> The master device can also initiate a stop condition (P) to end the communication or a restart condition (Sr) to switch between read and write operations with the same slave device.
+
+--> In summary, the master-slave concept in I2C communication allows for simple and efficient communication between devices on a circuit board, with the master device controlling the communication and the slave devices responding to commands.
+
+Q: What is TWI Meaning?
+
+--> TWI stands for "Two-Wire Interface". It is a type of serial communication protocol used for low-speed communication between microcontrollers, sensors, and other devices.
+
+--> The protocol uses two signal lines, SDA (Serial Data Line) and SCL (Serial Clock Line), to communicate between devices.
+
+--> The TWI protocol is designed for short-range communication between devices on a circuit board, typically using a master-slave architecture. 
+    The master device controls the communication and initiates data transfers, while the slave devices respond to commands and transfer data to the master.
+
+--> TWI/I2C is widely used in various applications, such as sensors, ADCs, DACs, EEPROMs, and other devices. 
+    It is a simple and efficient way to communicate between devices with a minimum number of wires and pins required, making it ideal for use in embedded systems with limited resources.

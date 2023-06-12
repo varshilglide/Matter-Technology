@@ -1,0 +1,5 @@
+1. Body Temperature - Direct value
+
+2. audacity  -- high pass filter, low pass filter
+
+3. Blood Pressure
