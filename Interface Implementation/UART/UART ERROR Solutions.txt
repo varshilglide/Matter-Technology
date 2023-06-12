@@ -1,0 +1,18 @@
+e1. Error: unknown type name '__printf_tag_ptr'
+--> Remove retarget.c file
+
+
+2. C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 7.12/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a(fileops.o): in function `putchar':
+
+--> Set Library options as RTT
+
+3. #if defined (UART_PRESENT)
+          NRF_UART_BAUDRATE_115200
+#else
+          NRF_UARTE_BAUDRATE_115200
+
+--> Do little bit search about above code
+
+
+4. Put this line on 99 in retarget.c file:
+--> #if defined(__SES_VERSION) && (__SES_VERSION >= 34000) && !defined(__SEGGER_RTL_VERSION)

@@ -1,0 +1,85 @@
+Q: What is UART and how it works?
+
+--> UART (Universal Asynchronous Receiver/Transmitter) is a communication interface commonly used in digital electronics to transmit and receive data between devices. It is a simple and widely used interface that provides a way to communicate serially over a single communication line.
+
+--> The UART interface consists of two main components: the transmitter and the receiver. The transmitter converts parallel data from a microcontroller or other digital device into serial data and transmits it over a single communication line. The receiver converts the serial data back into parallel data and sends it to the receiving device.
+
+--> UART communication is asynchronous, meaning that there is no clock signal transmitted with the data. Instead, each byte of data is preceded by a start bit and followed by one or more stop bits, which allows the receiving device to synchronize with the transmitting device. The baud rate of the UART determines the speed at which data is transmitted and received.
+
+--> UART interfaces are commonly used in a wide range of applications, such as in serial communication between microcontrollers and sensors, in computer communication interfaces like RS-232, and in communication between devices in industrial control systems.
+
+
+Q: what is the meaning of synchronous and asynchronous?
+
+--> Synchronous and asynchronous are two different ways of transmitting data between devices.
+
+--> Synchronous communication refers to a communication method where data is transmitted in a synchronized manner with a common clock signal shared between the devices. In synchronous communication, both the transmitting and receiving devices have a common timing reference that is used to determine when data is transmitted and received. This method is commonly used in applications that require precise timing and high-speed data transfer, such as digital audio and video transmission.
+
+--> Asynchronous communication, on the other hand, refers to a communication method where data is transmitted without a common clock signal. Instead, each byte of data is preceded by a start bit and followed by one or more stop bits, which allows the receiving device to synchronize with the transmitting device. Asynchronous communication is often used in applications that require lower data rates and where precise timing is not as critical, such as in serial communication between microcontrollers and sensors.
+
+--> In summary, synchronous communication uses a common clock signal to transmit data, while asynchronous communication uses start and stop bits to synchronize data transmission.
+
+==> some common synchronous interfaces include:
+
+1. Synchronous Serial Interface (SSI)
+2. Inter-Integrated Circuit (I2C)
+3. Synchronous Optical Network (SONET)
+4. Serial Peripheral Interface (SPI)
+5. Synchronous Digital Hierarchy (SDH)
+
+==> Similarly, some common asynchronous interfaces include:
+
+1. Universal Asynchronous Receiver/Transmitter (UART)
+2. RS-232
+3. RS-485
+4. Ethernet (although it can also support synchronous communication)
+
+
+Q: Which hardware devices are necessary to implement UART on nRF52840 (PCA10056)?
+
+--> To implement UART on the nRF52840 (PCA10056), you will need the following hardware devices:
+
+1. nRF52840 microcontroller: This is the main microcontroller that will be used to implement the UART communication. It is already available on the PCA10056 development board.
+
+2. UART Transceiver: A UART transceiver is required to convert the TTL-level signals from the microcontroller to the RS-232 or RS-485 signals used for communication over longer distances. However, for short-range communication, such as between a microcontroller and a computer, a UART transceiver may not be necessary.
+
+3. USB to UART Converter: If you want to communicate with the nRF52840 microcontroller using a computer, you will need a USB to UART converter. This device will convert the USB signals from the computer to the UART signals used by the microcontroller.
+
+4. Serial communication cable: A serial communication cable is required to connect the UART interface of the nRF52840 to the corresponding UART interface of the other device you are communicating with.
+
+--> In summary, the main hardware devices required to implement UART on the nRF52840 microcontroller are the microcontroller itself, a UART transceiver (if necessary), a USB to UART converter (if communicating with a computer), and a serial communication cable.
+
+
+==> Big Note: In summary, if you are only using the nRF52840 for short-range communication with another device, you may not need a USB to TTL converter. However, if you want to communicate with the nRF52840 using a computer, then you will need a USB to TTL converter.
+
+
+Q: UART pins in nRF52840(PCA10056)?
+
+--> The nRF52840 microcontroller on the PCA10056 development board has multiple UART interfaces available, each with its own set of dedicated pins for transmitting and receiving data.
+
+--> Here are the UART pins for each of the four hardware UART interfaces:
+
+1. UARTE0:
+--> TXD: Pin P0.06
+--> RXD: Pin P0.08
+
+2. UARTE1:
+-->TXD: Pin P0.12
+--> RXD: Pin P0.11
+
+3. UARTE2:
+--> TXD: Pin P0.20
+--> RXD: Pin P0.22
+
+4. UARTE3:
+--> TXD: Pin P0.31
+--> RXD: Pin P0.30
+
+
+--> Note that the UART pins on the nRF52840 microcontroller are configurable, so you can assign different pins for transmitting and receiving data if necessary. However, the above pin assignments are the default settings for each UART interface on the PCA10056 development board.
+
+
+
+
+
+
