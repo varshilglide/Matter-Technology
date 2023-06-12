@@ -1,0 +1,6 @@
+1. SDA --> 26(SDA)
+2. SCK --> 22(SS)
+3. MOSI --> 23(MOSI)
+4. MISO --> 24(MISO)
+5. GND --> GND
+6. 3.3V --> VDD

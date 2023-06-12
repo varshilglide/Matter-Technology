@@ -1,0 +1,5 @@
+1. __vfprintf.h: No such file or directory
+--> Exclude SEGGER_RTT_Syscalls_SES.c
+
+2. Output/Debug/Obj/spi_pca10056/nrfx_uart.o: file not recognized: file format not recognized
+--> To perform a clean build, please select "Build" from the menubar, and then click "Clean" followed by "Rebuild".

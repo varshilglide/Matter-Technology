@@ -1,0 +1,2 @@
+sdo -- miso
+sdi -- mosi
