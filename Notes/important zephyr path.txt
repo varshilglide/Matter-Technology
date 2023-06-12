@@ -1,0 +1,2 @@
+1. C:\ncs\v2.2.0\zephyr\boards\arm\nrf52840dk_nrf52840
+2. C:\ncs\v2.3.0\zephyr\include\zephyr   (((ALL Header File are mostly here)

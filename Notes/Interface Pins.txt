@@ -1,0 +1,19 @@
+Q: Which are Pins of all interfaces?
+
+--> Sure! Here are the pin numbers of the most commonly used interfaces on the nRF52840 Development Kit (PCA10056):
+
+1. GPIO pins: The nRF52840 DK features a total of 32 GPIO pins, numbered GPIO 0 to GPIO 31.
+
+2. UART pins: The UART interface is available on pins P0.08 (RX) and P0.06 (TX).
+
+3. SPI pins: The SPI interface is available on pins P0.31 (SCK), P0.30 (MOSI), and P0.29 (MISO).
+
+4. I2C pins: The I2C interface is available on pins P0.26 (SDA) and P0.27 (SCL).
+
+5. USB pins: The nRF52840 DK features a USB Type-C connector that provides a USB 2.0 interface.
+
+6. SWD pins: The SWD interface is available on pins P0.12 (SWDIO) and P0.11 (SWCLK).
+
+7. NFC pins: The nRF52840 DK features an NFC antenna that is connected to pins P0.04 and P0.05.
+
+--> It's worth noting that the nRF52840 DK also includes a number of additional pins and interfaces, such as analog inputs, PWM outputs, and a range of sensors. The full pinout and interface details are available in the board documentation provided by Nordic Semiconductor.

@@ -1,0 +1,37 @@
+Questions on ZAP Tool?
+
+1. What is the full form of the ZAP Tool?
+--> ZCL Advanced Platform (ZAP)
+
+2. What is ZAP Tool?
+--> ZCL Advanced Platform (ZAP) is a node.js template engine that's based on Matter Clusters.
+--> ZAP is a generic generation engine and user interface for applications and libraries based on Zigbee Cluster Library, the specification developed by the Connectivity Standards Alliance.
+
+3. Which are the Features provided by ZAP Tool?
+--> ZAP provides the following features for Matter apps and SDKs:++++++++++++++++++++++++
+
+--> Configure Matter Endpoints, Clusters, Attributes, and other device features from a GUI interface.
+--> Create templates that automatically generate Data Model definitions, callbacks, and other Matter source code.
+--> Create and use preconfigured ZAP files to include with your SDKs.
+
+4. What are the things that the ZAP tool allows us to Perform?
+--> ZAP allows us to perform the following:
+
+--> Perform SDK-specific customized generation of all global artifacts (constants, types, IDs, etc) based on the ZCL specification
+--> Provide UI for the end-user to select specific application configurations (clusters, attributes, commands, etc.)
+--> perform SDK-specific customized generation of all user-selected configuration artifacts (application configuration, endpoint configuration, etc) based on ZCL specification and customer-provided application configuration.
+
+
+5. Main Use-Case of ZAP Tool?
+--> ZAP is a generic templating engine. Examples are provided for how to generate artifacts for the C language environment, but one could easily add new templates for other language environments, such as C++, java, node.js, python, or any other.
+
+6. Why do we use the ZAP tool for Matter?
+--> Configure Matter Endpoints, Clusters, Attributes, and other device features from a GUI interface.
+--> Create templates that automatically generate Data Model definitions, callbacks, and other Matter source code.
+--> Create and use preconfigured ZAP files to include with your SDKs. 
+
+7. Useful Links for ZAP Tool?
+--> Install ZAP from source on Windows: https://github.com/project-chip/zap/blob/master/docs/ZAP-on-Windows.md
+--> Best Installation of ZAP on Windows: https://developers.home.google.com/matter/tools/zap#use
+--> Instructions about Installation: https://github.com/project-chip/zap/blob/master/docs/development-instructions.md
+

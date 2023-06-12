@@ -1,0 +1,33 @@
+--> The LM75B is a digital temperature sensor and thermal watchdog device that uses the I2C (Inter-Integrated Circuit) interface for communication. 
+--> It is manufactured by Texas Instruments and is commonly used in a variety of applications, such as power management, industrial control systems, and consumer electronics.
+
+--> The LM75B sensor provides a high-accuracy temperature measurement with a resolution of 0.125°C and an accuracy of ±2°C over the temperature range of -55°C to +125°C. 
+--> It has a built-in 11-bit ADC (Analog-to-Digital Converter) that converts the analog temperature signal to a digital value, which can be read over the I2C interface.
+
+--> In addition to temperature measurement, the LM75B also provides a programmable temperature threshold that can be used as a thermal watchdog function. When the temperature exceeds the programmed threshold, an alert signal is generated, which can be used to trigger an interrupt or other actions.
+
+--> The LM75B sensor has a low power consumption and can operate from a supply voltage range of 2.8V to 5.5V. It is available in a small SOT-23-6 package, making it easy to integrate into a wide range of applications.
+
+--> More details of Sensor:
+
+1. Local sensor accuracy (max) --> 2
+2. Type -->	Local
+3. Operating temperature range (°C) --> -55 to 125
+4. Supply voltage (min) (V) --> 3
+5. Interface type	--> I2C, SMBus
+6. Supply voltage (max) (V) --> 5.5
+7. Features --> UL recognized
+8.  Supply current (max) (µA) --> 500
+9. Temp resolution (max) (Bps) --> 9
+10. Remote channels (#)	--> 0
+11. Addresses -->	8
+12. Rating --> Catalog
+
+--> The LM75B temperature sensor uses a 7-bit address for communication over the I2C (Inter-Integrated Circuit) bus. 
+--> The 7-bit I2C address is comprised of a fixed 4-bit device code, which is set to 1001, followed by a 3-bit address that can be configured using the ADDR pin.
+
+--> The ADDR pin of the LM75B sensor can be connected to either ground, which sets the 3-bit address to 000, or to VCC, which sets the address to 111. 
+--> This allows up to eight LM75B sensors to be connected to the same I2C bus, each with a unique 7-bit I2C address
+
+--> It is worth noting that the LM75B sensor also supports the 10-bit I2C addressing mode, which allows up to 1024 devices to be addressed on the same bus. However, the LM75B is limited to using only the 7-bit addressing mode, as the ADDR pin is not connected to the package. 
+--> Therefore, only up to eight LM75B sensors can be connected to the same I2C bus using the 7-bit addressing mode.

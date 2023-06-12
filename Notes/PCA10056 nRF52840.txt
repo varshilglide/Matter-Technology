@@ -1,0 +1,12 @@
+Q: what is pca10056 in nRF52840 board?
+
+--> PCA10056 is the product code for the nRF52840 Development Kit (DK), which is a development board based on the nRF52840 system-on-chip (SoC) from Nordic Semiconductor. 
+    The nRF52840 DK is designed to enable rapid prototyping and development of Bluetooth low energy, Thread, Zigbee, and 802.15.4 wireless applications.
+
+--> The nRF52840 SoC is a powerful and flexible device that combines a Cortex-M4F processor, high-performance radio, and a wide range of on-chip peripherals. 
+    The nRF52840 DK provides easy access to these features through a range of interfaces, including USB, UART, SPI, I2C, and GPIOs. 
+    The development kit also includes onboard sensors, such as an accelerometer and a temperature sensor, as well as an NFC antenna for easy pairing with other devices.
+
+--> In addition to hardware, the nRF52840 DK also comes with a range of software development tools, including the Nordic nRF5 SDK, which provides drivers, libraries, and examples for developing applications on the nRF52840 SoC. The development kit is compatible with a range of development environments, including Nordic's own nRF Connect SDK, as well as third-party IDEs such as Keil, IAR, and Segger Embedded Studio.
+
+--> Overall, the nRF52840 DK, also known as PCA10056, is a powerful and flexible development board that enables developers to quickly prototype and develop wireless applications based on the nRF52840 SoC.

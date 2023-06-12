@@ -1,0 +1,54 @@
+Setup of ZAP Tool in Windows:
+
+--> Follow this Link for the Setup:  https://developers.home.google.com/matter/tools/zap#main.cpp
+
+Steps: 
+
+1. Install NVM through Git:
+--> Open the Git-Bash
+--> Make one Folder for NVM
+--> Clone this on NVM Folder: git clone https://github.com/nvm-sh/nvm.git .nvm
+--> Go to cd /.nvm Folder
+--> Check Out the Latest version with git checkout v0.39.3
+--> Activate NVM using: . ./nvm.sh
+--> Perform Below Lines:
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+2. Using NVM, install node v16.13.2
+--> $ nvm install 16.13.2
+
+3. Navigate to the ZAP repository folder(The Folder Where You to install ZAP tool) and install the Node dependencies.
+--> $ cd third_party/zap/repo
+--> $ npm install folder-hash
+--> $ npm install
+
+4. Run the ZAP Tool:
+--> To run ZAP, you'll need to choose a ZAP file (.zap) from one of the Matter examples.
+--> Go to the connectedhomeip path open Windows PowerShell on that path and write the below command:
+
+scripts/tools/zap/run_zaptool.sh C:/ncs/v2.4.0/nrf/samples/matter/sensors/src/template.zap
+
+--> One ZAP Window will open there.
+--> Click on ADD NEW ENDPOINT.
+
+--> Select Device and in that Matter Temperature.
+
+--> Open All clusters and Enable On/Off cluster.
+
+--> Go to Configuration of On/Off and go to commands in that and enables sign of ON and OFF.
+
+--> Click on ctrl+s.
+
+--> Go to Generate and Select Path.
+
+--> Path is C:\ncs\v2.4.0\nrf\samples\matter\sensors\src\zap-generated
+
+--> Then one Generate symbol will appear when you press Generate Button.
+
+--> Then Open that Path on Visual Code IDE and then You Can See the changes are appear there.
+
+Thank You.

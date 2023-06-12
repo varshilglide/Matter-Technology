@@ -1,0 +1,14 @@
+Q: what is bsp in PCA10056 in nRF52840?
+
+--> BSP stands for Board Support Package. In the context of the nRF52840 Development Kit (PCA10056), the BSP is a set of software libraries and drivers provided by Nordic Semiconductor to help developers get started with developing applications on the nRF52840 SoC.
+
+--> The BSP for PCA10056 includes a range of components, such as device drivers, board configuration files, and example applications. These components are designed to provide a consistent and easy-to-use interface to the hardware features of the nRF52840 DK, such as GPIOs, timers, UARTs, and more.
+
+Some of the key features of the BSP for PCA10056 include:
+
+1. Drivers for all the onboard sensors and interfaces, such as the accelerometer, temperature sensor, and NFC antenna.
+
+2. Example applications that demonstrate how to use the various features of the nRF52840 DK, such as Bluetooth Low Energy (BLE) connectivity, Thread and Zigbee wireless protocols, and more.
+Configuration files that help set up the device for specific use cases, such as low-power operation or high-speed data transfer.
+ 
+3. By using the BSP provided by Nordic Semiconductor, developers can quickly get started with developing applications on the nRF52840 DK without needing to write low-level device drivers or configure hardware settings manually. This can help speed up the development process and reduce the time to market for new products.

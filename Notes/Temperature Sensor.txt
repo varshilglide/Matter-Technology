@@ -1,0 +1,23 @@
+Temperature & Humidity Sensor:
+
+--> The nRF52840 is a versatile system-on-chip (SoC) that can interface with a variety of temperature sensors, depending on the specific application requirements.
+
+--> Here are some examples of temperature sensors that can be used with the nRF52840:
+
+1. DHT11/DHT22:
+--> These are low-cost sensors that are easy to use and can measure both temperature and humidity. 
+--> They communicate over a single-wire digital interface and can be easily connected to nRF52840.
+
+2. HDC1080:
+-->  It is a high-accuracy sensor that provides a digital output for temperature and humidity measurements. 
+--> It can operate from a single power supply and has a low-power consumption mode that makes it suitable for battery-powered applications.
+
+3. SHT3x:
+--> This sensor is based on a capacitive humidity sensor and a band-gap temperature sensor. 
+--> It has high accuracy and reliability and provides a digital output. It is available in various package options, including DFN, LGA, and TO.
+
+4. BME280:
+--> This is a versatile sensor that can measure temperature, humidity, and barometric pressure.
+--> It communicates over I2C or SPI and has low power consumption.
+--> It is suitable for a wide range of applications, including weather monitoring and indoor air quality.
+

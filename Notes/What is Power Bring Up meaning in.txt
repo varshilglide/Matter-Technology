@@ -1,0 +1,26 @@
+Q: What is Power Bring Up meaning in nRF52840?
+--> In the context of the nRF52840, "power bring-up" refers to the process of initializing the power supply to the chip and ensuring that it is stable and providing the correct voltage and current levels before the chip is fully operational.
+
+--> The nRF52840 is a wireless SoC (System-on-Chip) that requires a stable power supply to function properly. 
+--> During power bring-up, the chip's internal voltage regulators are activated and various power-related configurations are set to ensure that the chip receives the required power and operates within safe limits.
+
+--> If the power supply is not stable or if the voltage or current levels are incorrect, it can cause the chip to malfunction or even damage it. 
+--> Therefore, power bring-up is an important step in the initialization process of the nRF52840, and it should be done carefully and according to the manufacturer's
+    guidelines to ensure the reliable and safe operation of the chip.
+
+
+
+
+Q: How to check or do power bring up in nRF52840?
+
+--> Connect the power supply: Connect a stable and regulated power supply to the nRF52840 board. The recommended voltage range is typically between 1.7V and 5.5V, but you should consult the manufacturer's documentation for the specific board you are using to ensure you are using the correct voltage range.
+
+--> Check the power supply: Measure the voltage and current levels of the power supply to ensure they are within the recommended range. You can use a multimeter to do this.
+
+--> Enable the power regulators: Enable the internal voltage regulators of the nRF52840 by setting the appropriate configuration registers. This is typically done through software, using the board support package or SDK provided by the manufacturer.
+
+--> Check the voltage levels: Measure the voltage levels of the various power domains of the nRF52840 to ensure they are within the recommended range. This can be done using a multimeter or by using the voltage monitoring features provided by the manufacturer's SDK.
+
+--> Check the current consumption: Measure the current consumption of the nRF52840 to ensure it is within the recommended range. This can be done using a multimeter or by using the current monitoring features provided by the manufacturer's SDK.
+
+--> Verify proper operation: Verify that the nRF52840 is operating correctly by running test code or applications and checking for proper behavior and performance.

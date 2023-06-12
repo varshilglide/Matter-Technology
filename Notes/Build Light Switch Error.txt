@@ -1,0 +1,2 @@
+1. CMake Error at C:/ncs/v2.4.0/zephyr/cmake/modules/extensions.cmake:2161 (message): Assertion failed: GNUARMEMB_TOOLCHAIN_PATH is not set
+-->  The NCS toolchain must come before other paths in the PATH variable.

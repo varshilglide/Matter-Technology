@@ -1,0 +1,47 @@
+Open Thread Border Router:
+
+Q: What is Thread?
+--> Thread is an IP-based low-power wireless mesh networking protocol that enables secure device-to-device and device-to-cloud communications. 
+--> Thread networks can adapt to topology changes to avoid a single point of failure.
+
+Q: What is Open Thread Border Router?
+--> An OpenThread Border Router (OTBR) provides end-to-end connectivity to other IP-based networks, such as Wi-Fi or Ethernet. 
+--> It serves as a gateway between the Internet and the Thread network.
+--> A Thread network requires a Border Router to connect to other networks.
+
+--> A Thread Border Router minimally supports the following functions:
+
+==> Bidirectional IP connectivity between Thread and Wi-Fi/Ethernet networks.
+==> Bidirectional service discovery via mDNS (on Wi-Fi/Ethernet link) and SRP (on Thread network).
+==> Thread-over-infrastructure that merges Thread partitions over IP-based links.
+==> External Thread Commissioning (for example, a mobile phone) to authenticate and join a Thread device to a Thread network.
+
+--> OpenThread Border Router (OTBR) released by Google is an open-source implementation of the Thread Border Router.
+
+
+--> OpenThread's implementation of a Border Router is called OpenThread Border Router (OTBR), supporting a Radio Co-Processor (RCP) design.
+
+Q: Why did we choose RCP(Radio Co-Processor) in OTBR?
+--> More resources: OpenThread can take advantage of the host processor's resources, which is typically much more than what an 802.15.4 SoC provides.
+--> More cost-effective: minimize resource requirements on the 802.15.4 SoC, which can lead to a more cost-effective solution.
+--> Easier to debug: since most of the processing happens on the host processor, you can utilize more capable debugging tools on the host processor.
+--> More stable 802.15.4 SoC firmware: the RCP only implements the sub-MAC and PHY, reducing the frequency at which the 802.15.4 SoC needs firmware updates.
+--> Easier integration with host IPv6 network stack: having OpenThread run on the host allows for more direct integration with the host IPv6 stack.
+
+Q: Which are features services provided by OTBR?
+--> Web GUI for configuration and management
+--> Thread Border Agent to support external commissioning
+--> DHCPv6 Prefix Delegation to obtain IPv6 prefixes for a Thread network
+--> NAT64 for connecting to IPv4 networks
+--> DNS64 to allow Thread devices to initiate communications by name to an IPv4-only server
+--> Docker support
+
+
+Q: How do we use OTBR and RCP joiner to create a thread network in Matter?
+--> OpenThread Border Router (OTBR) and RCP joiner are two components that are used to create a Thread network. OTBR is a software router that provides connectivity to the internet, while an RCP joiner is a device that can be used to add new devices to the network.
+
+--> OTBR is a software router that runs on a variety of platforms, including Raspberry Pi, Linux, and macOS. It provides connectivity to the internet by using a Wi-Fi or Ethernet connection. OTBR also provides a number of other features, such as DHCP, DNS, and NTP.
+
+--> RCP joiner is a small, low-power device that can be used to add new devices to a Thread network. It does this by using the RCP protocol, which is a low-power, mesh networking protocol that is designed for use in smart home devices.
+
+--> To create a Thread network, you will need to install OTBR on a computer or device that has internet connectivity. You will also need to purchase one or more RCP joiners. Once you have installed OTBR and purchased one or more RCP joiners, you can follow the instructions in the OTBR documentation to create a Thread network.

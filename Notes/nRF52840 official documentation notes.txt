@@ -1,0 +1,47 @@
+Features:
+
+==> Bluetooth:
+
+--> Bluetooth 5 --> 2.4GHz
+
+--> Supported data rates:
+
+Bluetooth 5 ==> 2Mbps, 1Mbps, 500Kbps, 125 Kbps
+IEEE 802.15.4 ==> 250Kbps
+Proprietary 2.4 GHz - 2Mbps, 1 Mbps
+
+==> Voltage:
+
+--> 1.7V to 5.5V supply voltage range
+--> 1.8V to 3.3V regulated supply for external components.
+
+==> Advanced on-chip interfaces
+
+--> USB 2.0 full-speed controller
+--> QSPI 32 MHz interface
+--> High-speed 32 MHz SPI
+--> Type 2 near field communication (NFC-A) tag with wake-on field
+
+--> 48 general-purpose I/O pins
+
+--> 12-bit, 200ksps ADC - 8 configurable channels with programmable gain.
+
+--> Temperature Sensor
+
+--> 5x 32-bit timer with counter mode.
+--> Up to 4x SPI Master/ 3x SPI Slave with EasyDMA
+--> Up to 2x I2C compatible two-wire master/slave
+--> 2x UART (CTS/RTS) with EasyDMA
+--> 3x Real Time Counter(RTC)
+
+==> Memory:
+
+--> The nRF52840 contains 1024kb of flash memory and 256 kb of RAM that can be used for code and data storage.
+
+==> Debug and Trace:
+
+--> Two-pin serial wire debug (SWD) interface.
+
+
+
+

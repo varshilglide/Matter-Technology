@@ -1,0 +1,4 @@
+Temp & humidity sensor
+presens sensor
+amibeent light sensor
+IR Sensor

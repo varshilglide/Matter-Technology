@@ -1,0 +1,15 @@
+Steps of creating a home assistant in Raspberry PI:
+
+Refer To Links for that SetUp:
+--> https://www.home-assistant.io/integrations/otbr/
+--> https://www.home-assistant.io/getting-started/onboarding/
+
+1. Insert Memory Card in Raspberry PI.
+2. Install Home Assistant OS on SD Card with the help of Raspberry PI Imager.
+3. Give an ethernet connection to Raspberry PI and connect to the web via Raspberry PI IP.
+   --> Ip Link is: http://homeassistant.local:8123/config/integrations/dashboard
+4. Give configuration and it's starting to install the latest version of Home Assitant in RPI.
+5. Create User-name, id, password and to the Home-Assitant Application.
+6. Provide some details like Location, and Time-Line, and give some access to Bluetooth, and Wifi.
+7. Then Added thread, Matter(Beta version) in Home Assitant with the help of User Interface.
+8. Then Try to add OTBR with Home Assistant and User-Interface and ask for RestAPI for OTBR but failed to find it right now.

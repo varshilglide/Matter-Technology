@@ -1,0 +1,5 @@
+--> The nRF52840 SoC includes a total of 48 GPIO pins, which are divided into six ports with eight pins each. 
+--> These pins can be used for a variety of functions, including controlling LEDs, reading sensor data, interfacing with other peripherals, and communicating with other devices.
+
+--> To use the GPIO pins on the nRF52840, you typically need to configure them using the appropriate software interfaces provided by the chip manufacturer. 
+--> This involves setting up the pin direction (input or output), selecting the appropriate pin mode (e.g. pull-up or pull-down resistors), and setting the pin level (high or low) as required.

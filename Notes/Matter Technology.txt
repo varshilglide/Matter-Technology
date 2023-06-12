@@ -1,0 +1,125 @@
+Matter Technology: 
+
+Definition: Enhancing User Experience with Matter Powered Eco-System
+
+Domain: Smart Home, Connectivity Standard
+
+Official Link: https://csa-iot.org/all-solutions/matter/
+Reference Link: https://developers.home.google.com/matter/primer/commissioning
+
+Notes about Matter:
+
+1. Matter aims to reduce fragmentation across different vendors, and achieve interoperability among smart home devices and Internet of Things (IoT) platforms from different providers.
+
+2. The standard is based on Internet Protocol (IP) and works through one or several compatible border routers, avoiding the use of multiple proprietary hubs. 
+
+3. Matter products run locally and do not rely on an internet connection, although the standard is designed to talk to the cloud easily.
+
+4. Version 1.0 of the specification was published on 4 October 2022.[20] It introduced support for lighting products (such as mains power plugs, electric lights, and switches), door locks, thermostats and heating, ventilation, and air conditioning controllers, blinds and shades, home security sensors (such as door, window, and motion sensors), and televisions and streaming video players.
+
+5. Matter uses different wireless protocols for use cases:
+
+--> Wifi is used for devices requiring higher bandwidth and for easy integration into existing Wi-Fi networks.
+--> The introduction to Wi-Fi 6 also made it attractive for energy-constrained IoT devices.
+--> Thread is a low-power wireless mesh network usually used for devices requiring the highest energy efficiency.
+--> Bluetooth LE is used for the secure commissioning of devices.
+
+
+
+
+--> Started with Matter Core Specification Document:
+
+Chapter: 1 - Introduction
+
+--> Matter is an Application Layer Protocol Solution for Connectivity and Smart Home Automation over the Internet Protocol.
+--> Read some Acronyms and Abbreviations like,
+    BLE(Bluetooth Low Energy)
+    BTP(Bluetooth Transport Protocol)
+    IP(Internet Protocol)
+    QR code(Quick Response)
+--> See some Reference Materials.
+
+
+Chapter: 2 - Architecture
+
+--> Matter aims to build a universal IPv6-based communication protocol for smart home devices. The
+    the protocol defines the application layer that will be deployed on devices as well as the different link
+    layers to help maintain interoperability
+
+--> Layers:
+
+1. Application Layer
+2. Date Model
+3. Interaction Model
+4. Action Framing
+5. Security
+6. Message Framing + Routing
+7. IP Framing + Transport Management
+
+--> Network Topologies:
+
+1. Single Network(Thread/802.15.4 Network), Wi-fi Network:
+--> All Matter devices are connected to a single logical network in the single network topology. This
+    could be a Thread/802.15.4 network, a Wi-Fi network, or an Ethernet network.
+
+2. Star Network Topologies:
+--> The star network topology consists of multiple peripheral networks joined together by a central
+hub network.
+
+--> Product Identifier: A Product Identifier (Product ID or PID) is a 16-bit number that uniquely identifies a product of a
+                        vendor.
+
+--> Ipv6 Addressing
+--> Device Identity
+--> Security
+--> Device Commissioning
+
+
+Chapter: 3 - Cryptographic Primitives
+
+--> This chapter introduces the various cryptographic primitives, algorithms, and protocol building
+blocks used in this protocol.
+
+1. Deterministic Random Bit Generator (DRBG):
+--> This protocol relies on random numbers for many security purposes. For example, random numbers are used in generating secret keys, 
+counters, cryptographic signature generation random secrets, etc.
+
+2. True Random Number Generator (TRNG):
+--> A TRNG (aka. Entropy Source) is required to provide an entropy seed as an input to the DRBG algorithm.
+
+3. Hash Functions:
+--> Crypto_Hash() computes the cryptographic hash of a message
+
+4. Keyed-Hash Message Authentication Code (HMAC)
+--> Crypto_HMAC() computes the cryptographic keyed-hash message authentication code of a message.
+
+5. Public Key Cryptography
+6. Key Derivation Function (KDF)
+7. Password-Based Key Derivation Function (PBKDF)
+8. Password-Authenticated Key Exchange (PAKE)
+
+
+Chapter: 4 - Secure Channel
+
+1. Message Frame Format
+--> This section describes the encoding of the Matter message format. 
+--> The Matter message format provides flexible support for various communication paradigms, including unicast secure sessions, multicast group messaging, and session establishment itself.
+
+2. Security processing for incoming messages
+
+3. Secure channel protocol messages
+--> Message Counter Synchronization Protocol (MCSP)
+--> Message Reliability Protocol (MRP)
+--> Passcode Based Session Establishment(PASE)
+--> Certificate-Based Session Establishment(CASE)
+
+
+
+
+
+
+
+
+
+         
+

@@ -1,0 +1,6 @@
+Infrared Sensors:
+
+1. Infrared Temperature Sensor
+2. Infrared Proximity Sensor
+3. Infrared Receiver
+4. Infrared Emitter

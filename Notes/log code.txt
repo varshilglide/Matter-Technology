@@ -1,0 +1,41 @@
+#include <stdbool.h>
+#include <stdint.h>
+#include "nrf.h"
+#include "nrf_log.h"
+#include "nrf_log_ctrl.h"
+#include "nrf_log_default_backends.h"
+#include "nrf_uart.h"
+#include "nrf_uarte.h"
+
+void uart_init(void)
+{
+    // Initialize the UART peripheral
+    nrf_uarte_baudrate_set(NRF_UARTE0, NRF_UARTE_BAUDRATE_115200);
+    nrf_uarte_configure(NRF_UARTE0, NRF_UARTE_PARITY_EXCLUDED, NRF_UARTE_HWFC_DISABLED);
+    nrf_uarte_txrx_pins_set(NRF_UARTE0, 6, 8);
+    nrf_uarte_enable(NRF_UARTE0);
+}
+
+int main(void)
+{
+    ret_code_t err_code;
+
+    // Initialize the log module
+    err_code = NRF_LOG_INIT(NULL);
+    APP_ERROR_CHECK(err_code);
+
+    // Initialize the default backend for UART logging
+    NRF_LOG_DEFAULT_BACKENDS_INIT();
+
+    // Initialize the UART peripheral
+    uart_init();
+
+    // Start logging
+    NRF_LOG_INFO("UART logging started.");
+
+    while (true)
+    {
+        // Process any pending log entries
+        NRF_LOG_PROCESS();
+    }
+}

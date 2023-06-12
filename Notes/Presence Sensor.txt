@@ -1,0 +1,11 @@
+Presence Sensor:
+
+1. Passive Infrared (PIR) Sensor:
+--> This type of sensor can detect the presence of humans or animals by detecting changes in temperature in its field of view.
+
+2. Ultrasonic Sensor:
+3. Capacitive Sensor:
+--> Capacitive sensors can detect the presence of conductive or non-conductive objects by measuring changes in capacitance.
+
+4. Radio Frequency Identification (RFID) Sensor: 
+--> RFID sensors can detect the presence of RFID tags or cards within their range.

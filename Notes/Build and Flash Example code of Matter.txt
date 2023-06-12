@@ -1,0 +1,9 @@
+Question: How to Build the Matter SDK code and Flash it?
+--> First of all open NRF Connect SDK.
+--> Open ToolChain and open the SDK on Visual Code.
+--> Go to create a new Application.
+--> Select board nrf52840DK and then select example code of Matter.
+--> Then Build the Code from the Matter-Switch Application tab and click Build All Configuration.
+--> It takes a little bit of time to build the code.
+--> Once the Code is built then Click on the Actions followed by Flash Tab.
+--> Then Once the code is Flash then You can Use it.
