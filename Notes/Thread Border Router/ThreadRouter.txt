@@ -1,0 +1,16 @@
+--> Thread is an IP-based low-power wireless mesh networking protocol that enables secure device-to-device and device-to-cloud communications. 
+--> Thread networks can adapt to topology changes to avoid a single point of failure.
+
+--> A Thread Border Router connects a Thread network to other IP-based networks, such as Wi-Fi or Ethernet. 
+--> A Thread network requires a Border Router to connect to other networks. 
+
+--> A Thread Border Router minimally supports the following functions:
+
+
+1. Bidirectional IP connectivity between Thread and Wi-Fi/Ethernet networks.
+2. Bidirectional service discovery via mDNS (on Wi-Fi/Ethernet link) and SRP (on Thread network).
+3. Thread-over-infrastructure that merges Thread partitions over IP-based links.
+External Thread Commissioning (for example, a mobile phone) to authenticate and join a Thread device to a Thread network.
+
+--> OpenThread Border Router (OTBR) released by Google is an open-source implementation of the Thread Border Router.
+

@@ -1,0 +1,65 @@
+Approach for Creating Open Thread Border Router:
+
+--> https://openthread.io/codelabs/openthread-hardware#1
+
+Notes:
+
+1. OpenThread released by Google is an open-source implementation of the Thread® networking protocol.
+
+2. The Thread specification defines an IPv6-based reliable, secure, and low-power wireless device-to-device communication protocol for home applications. 
+
+3.  OpenThread implements all Thread networking layers including IPv6, 6LoWPAN, IEEE 802.15.4 with MAC security, Mesh Link Establishment, and Mesh Routing.
+
+==> Here we will learn below topics:
+
+1. Building and flashing OpenThread CLI binaries to dev boards
+2. Building an RCP consisting of a Linux machine and a dev board
+3. Communicating with an RCP using OpenThread Daemon and ot-ctl
+4. Manually managing Thread nodes with GNU Screen and the OpenThread CLI
+5. Secure commissioning of devices onto a Thread network
+6. How IPv6 multicast works
+7. Passing messages between Thread nodes with UDP
+
+==> OpenThread CLI: https://openthread.io/reference/cli
+
+Q: What is OpenThread CLI Binaries?
+--> The OpenThread CLI Binaries provide a command-line interface for controlling and configuring OpenThread devices. They allow you to perform various operations, such as joining and leaving a Thread network, managing network settings, monitoring network activity, and more.
+
+Q: What is RCP(Radio Co-Processor)?
+--> In embedded systems or devices that require wireless communication capabilities, such as IoT devices, a radio co-processor is often used to offload the main processor from the complex and power-intensive tasks involved in radio communication. The radio co-processor is specifically designed to handle functions such as transmitting and receiving radio signals, managing radio protocols, and processing radio-related data.
+
+Note: All steps were tested on Ubuntu 14.04.5 LTS (Trusty Tahr).
+
+Installation:
+
+1. Segger J-Link: https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack
+--> On Linux this is /opt/SEGGER/JLink.
+
+2. nRF5x Command Line Tools: https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Command-Line-Tools/Download
+--> The nRF5x Command Line Tools allow you to flash the OpenThread binaries to the nRF52840 boards.
+--> Install the appropriate nRF5x-Command-Line-Tools-<OS> build on your Linux machine.
+--> Place the extracted package in the root folder ~/
+
+Note: The nRF5x Command Line Tools do not support ARM architectures; therefore, the nRF52840 boards cannot be flashed by ARM-based Linux machines, such as the Raspberry Pi 3B.
+
+3. ARM GNU Toolchain: https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads
+--> We recommend placing the extracted archive in /opt/gnu-mcu-eclipse/arm-none-eabi-gcc/ on your Linux machine.
+
+==> Follow the steps given on the website.
+
+
+Q: Build OpenThread Daemon?
+--> script/cmake-build posix -DOT_DAEMON=ON
+
+--> "script/cmake-build": It refers to a directory or path where the build script or CMake configuration files for OpenThread are located.
+--> "POSIX": This specifies the build configuration or target platform. In this case, "posix" indicates that the build is intended for a POSIX-compliant operating system, such as Linux or macOS.
+--> "-DOT_DAEMON=ON": This is a CMake build option or variable being set for OpenThread. The "-DOT_DAEMON=ON" option configures the CMake variable "_DAEMON" to be set to "ON". This specific variable is likely specific to the OpenThread project and may enable the compilation and inclusion of a daemon or background service within the OpenThread Border Router.
+
+
+
+Q: Why do we use Open Thread Border Router?
+--> An OpenThread Border Router (OTBR) provides end-to-end connectivity to other IP-based networks, such as Wi-Fi or Ethernet. 
+--> It serves as a gateway between the Internet and the Thread network.
+
+
+
