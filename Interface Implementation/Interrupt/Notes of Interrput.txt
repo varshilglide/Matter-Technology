@@ -1,0 +1,13 @@
+Q: What is an Interrput?
+--> In computing, an interrupt is a signal to the processor from a device or software that needs immediate attention. Interrupts are used to handle events or requests in real-time, without wasting processor time by constantly polling or checking for events.
+
+--> When an interrupt occurs, the processor stops its current task and jumps to an interrupt service routine (ISR), also known as an interrupt handler. The ISR is a special routine that handles the interrupt and performs any necessary actions, such as updating a value, sending a message, or setting a flag. After the ISR completes, the processor returns to its previous task.
+
+--> There are two main types of interrupts: hardware interrupts and software interrupts. Hardware interrupts are triggered by external devices, such as keyboard, mouse, or network interface cards. Software interrupts, also called traps, are triggered by software, such as system calls or errors.
+
+--> Interrupts are an important part of operating systems and embedded systems, where they are used to handle input/output (I/O) operations, process data, and handle errors. Interrupts allow devices to communicate with the processor without requiring the processor to constantly check for events, which improves system performance and responsiveness.
+
+--> Overall, interrupts are a critical mechanism for handling events and requests in real-time systems and are used in a wide range of applications, from operating systems and network protocols to embedded systems and device drivers.
+
+
+
