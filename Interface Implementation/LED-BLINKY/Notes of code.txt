@@ -1,0 +1,8 @@
+Q: how many user-led in the nRF52840 board?
+
+--> The number of user LEDs on the nRF52840 board can vary depending on the specific board design. However, the nRF52840 Development Kit (DK), which has the product code PCA10056, features four user LEDs labeled LED1 through LED4.
+
+--> These LEDs are connected to specific GPIO pins on the nRF52840 SoC and can be controlled through software using the board support package (BSP) provided by Nordic Semiconductor. 
+    LED1 is usually green, while LED2, LED3, and LED4 are usually blue.
+
+--> These LEDs can be used for a variety of purposes, such as indicating the status of the device, providing visual feedback to the user, or as a debugging aid during software development.
