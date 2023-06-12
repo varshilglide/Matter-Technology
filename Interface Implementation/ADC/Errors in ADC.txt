@@ -1,0 +1,2 @@
+1. Error: Output/Debug/Obj/saadc_pca10056/thumb_crt0.o: in function `memory_set':
+--> To perform a clean build, please select "Build" from the menubar, and then click "Clean" followed by "Rebuild"
